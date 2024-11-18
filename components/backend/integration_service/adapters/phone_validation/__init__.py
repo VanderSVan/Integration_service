@@ -1,0 +1,1 @@
+from .dadata_service import DadataPhoneValidator

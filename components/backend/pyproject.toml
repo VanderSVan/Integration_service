@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "integration-service"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Shikhanov <vandersvanlin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.10.2"
+fastapi = "^0.112.0"
+uvicorn = "^0.30.5"
+pydantic = {version = "<2.0", extras = ["dotenv"]}
+sqlalchemy = "^2.0.32"
+alembic = "^1.13.2"
+python-json-logger = "^2.0.7"
+psycopg2-binary = "^2.9.9"
+asyncpg = "^0.29.0"
+aio-pika = "^9.4.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pytest-asyncio = "^0.23.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
